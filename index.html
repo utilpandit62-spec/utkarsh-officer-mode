@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UTKARSH OFFICER MODE</title>
+
+<style>
+body{
+    margin:0;
+    background:#090b0e;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+}
+
+.header{
+    padding:40px 20px;
+}
+
+h1{
+    font-size:38px;
+    margin:10px;
+}
+
+.subtitle{
+    color:#aaa;
+    letter-spacing:2px;
+}
+
+.card{
+    margin:15px;
+    padding:25px;
+    background:#15191f;
+    border:1px solid #30353d;
+    border-radius:20px;
+}
+
+button{
+    padding:15px 25px;
+    border:0;
+    border-radius:12px;
+    font-weight:bold;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.progress{
+    height:12px;
+    background:#292e35;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+.bar{
+    height:100%;
+    width:0%;
+    background:white;
+    border-radius:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="subtitle">
+PERSONAL DISCIPLINE SYSTEM
+</div>
+
+<h1>🫡 UTKARSH</h1>
+
+<h3>OFFICER MODE</h3>
+
+<p>DISCIPLINE > MOOD</p>
+
+</div>
+
+<div class="card">
+
+<h2>🔥 DAY 01</h2>
+
+<p>आज का Discipline Mission</p>
+
+<button onclick="completeMission()">
+MISSION COMPLETE
+</button>
+
+<div class="progress">
+<div class="bar" id="bar"></div>
+</div>
+
+<p id="status">0% Complete</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚔️ आज के नियम</h2>
+
+<p>⏰ समय की पाबंदी</p>
+<p>📚 पढ़ाई पूरी करना</p>
+<p>😡 गुस्से पर नियंत्रण</p>
+<p>📱 मोबाइल पर नियंत्रण</p>
+<p>🏃 शरीर का ध्यान</p>
+<p>🤝 सबके साथ सम्मान</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 मेरा लक्ष्य</h2>
+
+<p>
+हर दिन कल वाले उत्कर्ष से बेहतर बनना।
+</p>
+
+</div>
+
+<script>
+
+let progress = 0;
+
+function completeMission(){
+
+    if(progress < 100){
+        progress += 20;
+    }
+
+    document.getElementById("bar").style.width =
+    progress + "%";
+
+    document.getElementById("status").innerText =
+    progress + "% Complete";
+
+}
+
+</script>
+
+</body>
+</html>
